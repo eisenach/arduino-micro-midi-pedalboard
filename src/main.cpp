@@ -6,8 +6,8 @@
 SerialDebugMIDI_Interface<decltype(Serial)> midi_debug{Serial};
 
 
-CD74HC4067 mux1 {6,  {2, 3, 4, 5}};
-CD74HC4067 mux2 {12, {8, 9, 10, 11}};
+CD74HC4067 mux1 {A0, {2, 3, 4, 5}};
+CD74HC4067 mux2 {A1, {6, 7, 8, 9}};
 
 // The velocity of the note events
 constexpr uint8_t velocity = 0x7F;
