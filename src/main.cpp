@@ -2,8 +2,8 @@
 #include <Control_Surface.h> // Include the Control Surface library
 #include <MIDI_Interfaces/DebugMIDI_Interface.hpp>
  
-// Instantiate a MIDI Debug interface at 115200 baud.
-SerialDebugMIDI_Interface<decltype(Serial)> midi_debug{Serial};
+USBMIDI_Interface midi;
+//SerialDebugMIDI_Interface<decltype(Serial)> midi_debug{Serial};
 
 
 CD74HC4067 mux1 {A0, {2, 3, 4, 5}};
